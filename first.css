@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #000;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.cart {
+  font-size: 16px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 40px;
+  background: linear-gradient(to right, #f0f0f0, #ffffff);
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ff0055;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.products {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.products h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.product-card {
+  width: 220px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.price {
+  color: #555;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.rating {
+  color: #f1c40f;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #ff0055;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
